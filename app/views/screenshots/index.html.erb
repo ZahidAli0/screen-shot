@@ -1,0 +1,27 @@
+<!-- app/views/screenshots/index.html.erb -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Screenshot Capture</title>
+</head>
+<body>
+  <h1>Capture Screenshot</h1>
+  <%= form_tag(capture_screenshots_path, method: :post) do %>
+    <p>Enter the URL you want to capture:</p>
+    <%= text_field_tag :url %>
+    <%= submit_tag 'Capture Screenshot' %>
+  <% end %>
+
+
+  <% if @message %>
+    <p><%= @message %></p>
+  <% end %>
+
+  <% if @screenshot_url %>
+    <h2>Preview of Captured Screenshot:</h2>
+    <img src="<%= @screenshot_url %>" alt="Captured Screenshot" width="300">
+  <% end %>
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+<!-- app/views/screenshots/success.html.erb -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Success - Screenshot Capture</title>
+</head>
+<body>
+  <h1>Success - Screenshot Captured</h1>
+
+  <% if flash[:message] %>
+    <p><%= flash[:message] %></p>
+  <% end %>
+
+  <%
+=begin%>
+ <% if flash[:screenshot_url] %>
+    <h2>Preview of Captured Screenshot:</h2>
+    <img src="<%= flash[:screenshot_url] %>" alt="Captured Screenshot" width="300">
+  <% end %> 
+<%
+=end%>
+</body>
+</html>
