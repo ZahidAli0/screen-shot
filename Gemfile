@@ -74,6 +74,7 @@ end
 
 gem 'cssbundling-rails'
 
-gem 'aws-sdk-s3'
-
 gem 'selenium-webdriver'
+
+# Gemfile
+gem 'cloudinary'

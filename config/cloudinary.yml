@@ -1,0 +1,17 @@
+# config/cloudinary.yml
+development: 
+  cloud_name: "ducflkovl"
+  api_key: "668782873177133"
+  api_secret: "8fwncj3s_tKQHQEeI2HIq_NQTNw"
+  secure: true
+
+test:
+  cloud_name: "ducflkovl"
+  api_key: "668782873177133"
+  api_secret: "8fwncj3s_tKQHQEeI2HIq_NQTNw"
+
+production:
+  cloud_name: "ducflkovl"
+  api_key: "668782873177133"
+  api_secret: "8fwncj3s_tKQHQEeI2HIq_NQTNw"
+  secure: true
