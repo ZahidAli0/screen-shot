@@ -1,13 +1,8 @@
-# app/controllers/screenshots_controller.rb
-
 class ScreenshotsController < ApplicationController
-  def index
-    # Empty action for rendering the index view
-  end
+  def index; end
 
   def success
     @screenshot = Screenshot.last
-    # Nothing to do here, we'll just render the view
   end
 
   def capture
